@@ -1,7 +1,17 @@
+//require express, require dotenv
+require('dotenv').config()
 const express = require('express')
+const app = express()
+
+
 
 app.get('/', (req, res) => {
     res.send('hello')
 })
 
-app.listen(3000)
+app.get('*', (req, res) => {
+    res.status(404).send('<h1>404 Page</h1>')
+})
+
+//listens on port defined in .env file
+app.listen(process.env.PORT)
