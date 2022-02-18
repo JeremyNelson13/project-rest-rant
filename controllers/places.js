@@ -1,5 +1,5 @@
-const router = requires('express')
-
+const router = require('express').Router();
+//GET /places
 router.get('/', (req, res) => {
     res.send('GET /places')
 })
