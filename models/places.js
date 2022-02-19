@@ -11,7 +11,7 @@ module.exports = [{
     cuisines: 'Dessert, Bakery',
     pic: '/images/chocolate.jpg'
 }, {
-    name: 'Cafe Durango',
+    name: 'Cafe Debian',
     city: 'New Orleans',
     state: 'LA',
     cuisines: 'French, New American',
