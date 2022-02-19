@@ -31,5 +31,13 @@ router.get('/', (req, res) => {
 
     res.render('places/index', { places })
 })
+
+router.get('/new', (req, res) => {
+    res.render('places/new_page')
+})
+
+// router.get('/:id', (req, res) => {
+//     //
+// })
 //exports router
 module.exports = router
