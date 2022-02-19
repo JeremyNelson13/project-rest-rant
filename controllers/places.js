@@ -32,12 +32,20 @@ router.get('/', (req, res) => {
     res.render('places/index', { places })
 })
 
+router.post('/', (req, res) => {
+    res.send('POST /places stub')
+})
+
 router.get('/new', (req, res) => {
     res.render('places/new_page')
 })
 
-// router.get('/:id', (req, res) => {
-//     //
-// })
+router.get('/:id', (req, res) => {
+    res.send('GET /places/:id stub')
+})
+
+router.put('/:id', (req, res) => {
+    res.send('PUT /places/:id stub')
+})
 //exports router
 module.exports = router
