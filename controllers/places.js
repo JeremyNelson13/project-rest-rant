@@ -34,13 +34,33 @@ router.get('/:id', (req, res) => {
         res.render('error404')
     }
     else {
-       res.render('places/show_page', { place: places[id] }) 
+       res.render('places/show_page', { place: places[id], id }) 
     }
     
 })
 
 router.put('/:id', (req, res) => {
+    //update places stub
     res.send('PUT /places/:id stub')
+})
+
+//delete places route
+router.delete('/:id', (req, res) => {
+    res.send('DELETE /places/:id')
+})
+
+//edit places route
+router.get('/:id/edit', (req, res) => {
+    res.send('GET /places/:id/edit')
+})
+
+//post comment/rants route
+router.post('/places/:id/rant', (req, res) => {
+    res.send('POST /places/:id/rant')
+})
+//delete rant/comment route
+router.delete('/places/:id/rantId', (req, res) =>{
+    res.send('DELETE /places/:id/rantId')
 })
 //exports router
 module.exports = router

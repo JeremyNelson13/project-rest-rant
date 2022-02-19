@@ -34,6 +34,14 @@ function show_page (data) {
                 <h2>Rants and Comments!</h2>
                 <h3>
                     No Rants yet! Tell us how you really feel!
+                    <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
+                        Edit
+                    </a>
+                    <form method='POST' action={`/places/${data.id}?_method=DELETE`}>
+                        <button type='submit' className='btn-danger'>
+                            Delete 
+                        </button>
+                    </form>
                 </h3>
             </main>
         </Def>
