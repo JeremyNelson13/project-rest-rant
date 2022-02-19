@@ -8,19 +8,25 @@ router.get('/', (req, res) => {
         city: 'Boston',
         state: 'MA',
         cuisines: 'Thai, Fusion',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/teas.jpg'
     }, {
         name: 'C#ocoholics',
         city: 'Wilmington',
         state: 'NC',
         cuisines: 'Dessert, Bakery',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/chocolate.jpg'
     }, {
         name: 'Cafe Durango',
         city: 'New Orleans',
         state: 'LA',
         cuisines: 'French, New American',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/grill.jpg'
+    }, {
+        name: 'VM Bistro',
+        city: 'Atlanta',
+        state: 'GA',
+        cuisines: 'Soul Food, Catering',
+        pic: '/images/soul-food.jpg'
     }]
 
     res.render('places/index', { places })
